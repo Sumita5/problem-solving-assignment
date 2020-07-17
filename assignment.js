@@ -13,7 +13,7 @@ console.log(convertor);
 
 
 
-// Problem 02
+// Problem 02: wood required for chair, table & bed are 1, 3, 5 cft.
 function woodCalculator(chairPcs, tablePcs, bedPcs){
     if(chairPcs >= 0 && tablePcs >=0 && bedPcs >=0){
         var woodQuantity = chairPcs*1 + tablePcs*3 + bedPcs*5;
@@ -29,7 +29,7 @@ var bedPcs = parseInt(10);
 var resultWood = woodCalculator(chairPcs, tablePcs, bedPcs);
 console.log(resultWood);
 
-// Problem 03
+// Problem 03 : 1st 10 floor 15ft height, next 10 floor 12 ft height, above 20th floor 10 ft  height. brick required 1000pcs per feet.
 function brickCalculator(storedBuilding){
     if(storedBuilding <= 10 && storedBuilding > 0){
         var brick = storedBuilding*15*1000;
@@ -48,7 +48,7 @@ function brickCalculator(storedBuilding){
     }
 }
 
-var storedBuilding = 105;
+var storedBuilding = 35;
 var resultBrickQuantity = brickCalculator(storedBuilding);
 console.log(resultBrickQuantity);
 
