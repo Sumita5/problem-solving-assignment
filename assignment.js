@@ -54,23 +54,17 @@ console.log(resultBrickQuantity);
 
 // Problem 04
 function tinyFriend(friendsName){
-    var name = friendsName[0];
-    var smallerName = [];
+    var smallerName = friendsName[0];
     for (var i = 0; i < friendsName.length; i++){
         var currentName = friendsName[i];
-        if(currentName.length < name.length){
-            name = currentName;
+        if(currentName.length < smallerName.length){
+            smallerName = currentName;
         }
     }
-    for(var i = 0; i < friendsName.length; i++){
-        if(name.length == friendsName[i].length){
-            name = friendsName[i];
-            smallerName.push(name);
-        }
-    }     
+      
     return smallerName;
 }
-var friendsName = ["shakti", "sajib", "supriya", "ma", "eshita", "sumita", "sumi", "na", "satyaki", "Jhankar", "niyati"];
+var friendsName = ["shakti", "sajib", "supriya", "ma", "eshita", "sumita", "sumi", "na", "satyaki", "niyati"];
 var smallestName = tinyFriend(friendsName);
 console.log("Smallest name among friends is: " + smallestName);
 
